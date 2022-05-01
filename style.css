@@ -46,7 +46,7 @@ li a{
   display: block;
   color: #fff;
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 #name {
@@ -150,6 +150,28 @@ li a{
   flex-flow: wrap;
 }
 
+.arrow {
+  text-align: center;
+  padding: 2% 0% 0% 0%;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
   .password-generator {
     width: 500px;
     height: 500px;
@@ -199,11 +221,12 @@ li a{
   border-radius: 10px;
   background-color: #fff;
   overflow: hidden;
+  font-size: 1.15rem;
   transition: all 400ms ease-in-out;
 }
 
 .text-container:hover {
-  height: 230px;
+  height: 300px;
 }
 
 .text-container:hover .content p {
