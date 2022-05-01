@@ -38,7 +38,7 @@ ul {
   justify-content: space-between;
   padding: 0 10%;
   list-style: none;
-  height: 10vh;
+  height: 7vh;
   background-color: rgba(98, 98, 98, 0.205);
 }
 
@@ -46,7 +46,7 @@ li a{
   display: block;
   color: #fff;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 #name {
@@ -191,11 +191,12 @@ li a{
 
 .text-container {
   position: absolute;
-  height: 75px;
+  height: 90px;
   width: 100%;
   z-index: 2;
   left: 0;
   bottom: 0;
+  border-radius: 10px;
   background-color: #fff;
   overflow: hidden;
   transition: all 400ms ease-in-out;
@@ -203,6 +204,13 @@ li a{
 
 .text-container:hover {
   height: 230px;
+}
+
+.text-container:hover .content p {
+  display: block;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .name {
@@ -215,6 +223,10 @@ li a{
 .content {
   padding: 25px, 0;
   margin: 15px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .button {
@@ -311,8 +323,9 @@ li a{
   }
 
   .about-container {
-    margin: 10%;
-    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: auto;
     margin-top: 5rem;
     background-color: #f8f8f8;
@@ -326,8 +339,9 @@ li a{
   }
   
   .about-image {
-    height: 400px;
-    width: 400px;
+    margin-top: 20px;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
     background-image: url(/images/me.jpg);
     background-size: cover;
@@ -336,13 +350,9 @@ li a{
   }
   
   .about-text {
-    height: auto;
+    margin-left: 20px;
     width: 100%;
-    font-size: 1.5rem;
-    margin-left: 100px;
-    padding: 5% 5%;
-    border-radius: 10%;
-    box-shadow: 1px 7px 10px rgba(0, 0, 0, 0.3);
+    font-size: 1.25rem;
   }
   
   .social-icons {
