@@ -46,7 +46,7 @@ li a{
   display: block;
   color: #fff;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 
 #name {
@@ -241,12 +241,11 @@ li a{
 /* ABOUT SECTION */
 
 .about-container {
-  margin: 10%;
-  width: 80%;
+  padding: 40px 10px;
+  width:  100%;
   height: auto;
   margin-top: 5rem;
-  background-color: #f8f8f8;
-
+  background-color: #f8f8f8f5;
 }
 
 .about-section {
@@ -257,8 +256,8 @@ li a{
 }
 
 .about-image {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   border-radius: 50%;
   background-image: url(/images/me.jpg);
   background-size: cover;
@@ -268,11 +267,12 @@ li a{
 
 .about-text {
   height: auto;
-  width: 40%;
+  width: 51%;
   font-size: 1.5rem;
   margin-left: 100px;
-  padding: 5% 5%;
-  border-radius: 10%;
+  border-radius: 20px;
+  line-height: 2em;
+  padding: 50px 50px;
   box-shadow: 1px 7px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -285,6 +285,10 @@ li a{
   margin: 5% 40%;
   padding-top: 30px;
 }
+
+.social-icons:hover {
+  transform: scale(1.2)
+  }
 
 /* MOBILE VIEW */
 
