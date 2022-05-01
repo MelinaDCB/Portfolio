@@ -198,6 +198,7 @@ li a{
   bottom: 0;
   background-color: #fff;
   overflow: hidden;
+  transition: all 400ms ease-in-out;
 }
 
 .text-container:hover {
@@ -247,7 +248,7 @@ li a{
   height: 400px;
   width: 400px;
   border-radius: 50%;
-  background-image: url(/images/9WVK8tc-_400x400.jpg);
+  background-image: url(/images/me.jpg);
   background-size: cover;
   background-position: center;
   box-shadow: -10px 7px 10px rgba(0, 0, 0, 0.3);
@@ -260,7 +261,7 @@ li a{
   margin-left: 100px;
   padding: 5% 5%;
   border-radius: 10%;
-  box-shadow: -10px 7px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 7px 10px rgba(0, 0, 0, 0.3);
 }
 
 .social-icons {
@@ -271,4 +272,86 @@ li a{
   width: 30%;
   margin: 5% 35%;
   padding-top: 30px;
+}
+
+/* MOBILE VIEW */
+
+@media (max-width: 768px) {
+  #nav {
+    display: none;
+  }
+
+  #mobile-nav {
+    display: block;
+  }
+
+  .mobile-nav-bar {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
+  }
+
+  ul {
+    background-color: rgba(0, 0, 0, 0.616);
+  }
+
+  .hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    position:absolute;
+    top: 40%;
+    left: 10%;
+    font-size: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+
+  .about-container {
+    margin: 10%;
+    width: 80%;
+    height: auto;
+    margin-top: 5rem;
+    background-color: #f8f8f8;
+  }
+  
+  .about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+  }
+  
+  .about-image {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-image: url(/images/me.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: -10px 7px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .about-text {
+    height: auto;
+    width: 100%;
+    font-size: 1.5rem;
+    margin-left: 100px;
+    padding: 5% 5%;
+    border-radius: 10%;
+    box-shadow: 1px 7px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    width: 30%;
+    margin: 5% 35%;
+    padding-top: 30px;
+  }
 }
