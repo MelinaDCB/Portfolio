@@ -20,10 +20,6 @@ a {
   text-decoration: none;
 }
 
-a:visited {
-  color: blue;
-}
-
 /* NAVBAR SECTION*/
 
 #mobile-nav {
@@ -204,6 +200,10 @@ li a {
   background-image: url(/images/holidays\ project.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.store-website a:visited {
+  color: blue;
 }
 
 .ruby-scraping {
